@@ -1,0 +1,47 @@
+body{
+  margin: 1rem;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title{
+  margin-top: 4rem;
+}
+h2{
+  margin: 0;
+  font-size: 2rem;
+}
+#galaxy{
+  animation-name: flip ;
+  transform-origin: left bottom;
+  animation-duration: 4s;
+  animation-timing-function: ease-out;
+  animation-iteration-count:infinite;
+}
+@keyframes flip {
+  0% {}
+  75% {transform: rotate(-120deg);}
+  100%{}
+}
+.photo-scroll{
+  animation-name: photos ;
+  animation-duration: 8s;
+  animation-iteration-count:infinite;
+  margin: 0;
+  width: 100%;
+  height: 60vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation-timing-function:step-end;
+}
+@keyframes photos {
+  0%{background-image: url(../assets/imageedit_1_2043075280.png);}
+  25%{background-image: url(../assets/borapurple5.webp);}
+  50%{background-image: url(../assets/galaxy-z-flip4.webp);}
+  75%{background-image: url(../assets/ph-galaxy-z-flip4-f721-sm-f721blvaphl-533048098.webp);}
+}

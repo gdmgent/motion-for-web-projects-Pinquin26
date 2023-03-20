@@ -1,0 +1,64 @@
+body { 
+    background-color: black  ;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+.content h2 {
+    position: absolute;
+    top:100vh;
+    margin: 0;
+    left: 0;
+    transform: rotate(-90deg);
+    font-size: 5rem;
+    transform-origin: 0 0;
+    transition:ease-in-out .3s;
+    background-color: hsla(0, 0%, 0%, 0.5);
+}
+.content p {
+    position: absolute;
+    top: 120vh;
+    transition: ease-out .3s;
+    margin: 1rem;
+}
+.city {
+    background-image: url(assets/max-bender-VmX3vmBecFE-unsplash.jpg);
+
+}
+.nature {
+    background-image: url(assets/lukasz-szmigiel-ky0z5M7PPV8-unsplash.jpg);
+
+}
+.hands {
+    background-image: url(assets/gabriel-jimenez-jin4W1HqgL4-unsplash.jpg);
+
+}
+.content{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    flex: 2;
+    transition:ease-in-out .5s;
+    position: relative;
+}
+.content:hover{
+    flex: 5;
+}
+.content:hover h2{
+    transform: rotate(0deg);
+    top:0;
+    margin: 1rem;
+}
+.content:hover p{
+    top: 15vh;
+}
