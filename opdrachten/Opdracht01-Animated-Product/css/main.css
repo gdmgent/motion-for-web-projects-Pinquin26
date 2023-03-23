@@ -29,7 +29,7 @@ h2{
 }
 .photo-scroll{
   animation-name: photos ;
-  animation-duration: 8s;
+  animation-duration: 10s;
   animation-iteration-count:infinite;
   margin: 0;
   width: 100%;
