@@ -1,12 +1,20 @@
 body{
   margin: 1rem;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  grid-template: 
+  "header header header"
+  "photo specs specs";
 }
 header{
+  grid-area: header;
   height: 10rem;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-items: center;
 }
 .title{
   margin-top: 4rem;
@@ -28,6 +36,7 @@ h2{
   100%{}
 }
 .photo-scroll{
+  grid-area: photo;
   animation-name: photos ;
   animation-duration: 10s;
   animation-iteration-count:infinite;
@@ -47,6 +56,9 @@ h2{
 }
 .specs{
   font-weight: bold;
+}
+#more-info{
+  grid-area: specs; 
 }
 .info{
   background-color: white;
