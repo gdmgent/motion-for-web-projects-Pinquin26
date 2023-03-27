@@ -119,7 +119,7 @@ main {
 .card a {
   transition-duration: .4s;
 }
-.card a:hover {
+.card:hover {
   font-size: 1.2rem;
 }
 .table-content {
@@ -138,6 +138,9 @@ main {
 .table-content td {
   padding: .5rem;
   border-bottom: 2px solid rgb(156, 155, 155);
+}
+.table-content td:hover {
+  border-bottom: black 2px solid;
 }
 .table-content tr:nth-of-type(even) {
   background-color: rgb(243, 235, 243);
