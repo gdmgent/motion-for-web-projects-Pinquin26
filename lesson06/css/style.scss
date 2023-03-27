@@ -1,0 +1,75 @@
+@font-face {
+    /* RobotoFlex-VariableFont options: 
+        slnt,wdth,wght,opsz,
+        GRAD,XTRA,YOPQ,YTAS,
+        YTDE,YTFI,YTLC,YTUC */
+    font-family: 'RobotoFlex';
+    src: url(RobotoFlex.ttf) format('truetype');
+}
+:root{
+    --background:black;
+}
+h1 {
+    font-family: 'RobotoFlex';
+    font-size: 3rem;
+    font-variation-settings: 
+        "wght" 1000, 
+        "wdth" 50;
+    transition-duration: .3s;
+}
+h1:hover {
+    font-variation-settings: 
+        "wght" 300, 
+        "wdth" 100;
+    //voeg ook een transition toe bij de h1 voor een smooth animatie
+}
+nav a {
+    //  text-shadow: x y blur color, ... ; 
+        font-family: 'RobotoFlex';
+        transition-duration: .2s;
+        font-size: 3rem;
+        font-variation-settings: 
+        "wght" 1000, 
+        "wdth" 50;
+}
+nav a:hover{
+    text-shadow: 
+    .06em .06em 0px #ED1F82,
+    -.06em -.06em 0px #1FEDE0;
+   
+}
+main {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: y mandatory;
+    section {
+        width: 100vw;
+        height: 100vh;
+        scroll-snap-align: start;
+    }
+    scroll-behavior: smooth;
+}
+main {
+    perspective: 2px;
+    section {
+        transform-style: preserve-3d;
+        &::after {
+            content: " ";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: translateZ(-1px) scale(1.5);
+            background-size: 100%;
+            z-index: -1;
+            background: url(../images/offf.jpg) no-repeat center center;
+            background-size: cover;
+        }
+        &.no-parallax {
+            background-color: var(--background);
+            z-index: 999;
+        }
+    }
+}

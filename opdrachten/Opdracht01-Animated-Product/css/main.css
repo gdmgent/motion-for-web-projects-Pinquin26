@@ -1,22 +1,15 @@
-@media (max-width: 1400px){
-  main {
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr 2fr 6fr;
-    grid-template: 
-    "photo photo photo"
-    "buttons buttons buttons"
-    "accessories accessories accessories"
-    "specs specs specs";
-  }
+html, body {
+  height: auto;
+  width: auto;
 }
 body{
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', Verdana, sans-serif;
+  width: 100%;
 }
 header{
   grid-area: header;
-  height: 10rem;
+  min-height: 10rem;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,16 +55,17 @@ main {
   animation-duration: 10s;
   animation-iteration-count:infinite;
   margin: 0;
-  width: 100%;
-  height: 50vh;
-  background-size: contain;
+  width: 40vw;
+  height: 65vh;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   animation-timing-function:step-end;
 }
 @keyframes photos {
   0%{background-image: url(../assets/imageedit_1_2043075280.png);}
-  25%{background-image: url(../assets/borapurple5.webp);}
+  25%{background-image: url(../assets/borapurple5.webp);
+  scale: .9;}
   50%{background-image: url(../assets/galaxy-z-flip4.webp);}
   75%{background-image: url(../assets/ph-galaxy-z-flip4-f721-sm-f721blvaphl-533048098.webp);}
 }
@@ -100,6 +94,7 @@ main {
   grid-area: accessories;
   justify-content: space-evenly;
   margin-bottom: 20rem;
+  align-items: center;
 }
 .card {
   justify-content: center;
@@ -131,7 +126,7 @@ main {
   grid-area: specs;
   margin: 25px 0;
   font-size: 1rem;
-  max-width: 50%;
+  max-width: 50vw;
   border-collapse: collapse;
 }
 .table-content tr th {
@@ -168,4 +163,40 @@ footer {
 }
 footer:hover {
   color: white;
+}
+@media (max-width: 600px){
+  main {
+    margin: 0 0;
+    display: grid;
+    width: 100vw;
+    justify-content: center;
+    grid-template-columns:  1fr ;
+    grid-template-rows: 2fr 2fr 2fr 2fr 6fr;
+    grid-template: 
+    "photo"
+    "buttons"
+    "accessories"
+    "specs";
+  }
+  body{
+    width: 100vw;
+  }
+  header {
+    width: 100vw;
+  }
+  .card-group{
+    flex-direction: column;
+  }
+  .photo-scroll{
+    height: 50vw;
+    scale: .5;
+  }
+  .btn-group{
+    gap:2rem;
+    flex-direction: column;
+  }
+  .table-content{
+    margin: 0;
+    width: 50vw;
+  }
 }
