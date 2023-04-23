@@ -1,3 +1,69 @@
 body {
+    margin: 1rem;
+    width: fit-content;
     background-image: url(../images/forest.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-attachment: fixed;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    align-items: center;
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    nav {
+        position: sticky;
+        left: 1rem;
+        top: 1rem;
+        display: inline;
+        a {
+            border: solid 2px black;
+            border-radius: 2rem;
+            background-color: green;
+            text-decoration: none;
+            color: black;
+            padding: .2rem .5rem;
+        }
+    }
+    #intro {
+        width: 40rem;
+        margin-left: 40rem;
+        margin-bottom: 6rem;
+    }
+    article {
+        width: 40rem;
+        .verticalLine{
+            width: .2rem;
+            height: 6rem;
+            background-color: white;
+            position: relative;
+            bottom: -1rem;
+        }
+    }
+    .storie {
+        display: flex;
+        flex-flow: row;
+        gap: 5rem;
+        align-items: center;
+        height: 100vh;
+        h1 {
+            font-weight: bold;
+            font-size: 2rem;
+            margin-bottom: 6rem;
+        }
+        h2{
+            font-size: 20rem;
+        }
+    }
+    #line {
+        width: 90%;
+        height: .2rem;
+        background-color: white;
+        position: relative;
+        top:-15rem;
+        margin-left: 40rem;
+    }
 }
