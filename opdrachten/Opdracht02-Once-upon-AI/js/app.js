@@ -12,7 +12,7 @@ articles.forEach(article => {
             trigger: article,
             toggleActions: "play reverse play reset",
             start: "left 80%",
-            end: "right 40%",
+            end: "right 35%",
         },
         duration: .5, 
         y: -120, 
