@@ -9,15 +9,13 @@ function quintendt (fase) {
         .to("#quintendt .box", {
             borderRadius:"50%",
             backgroundColor: "brown",
-            rotation: 180,
-            duration: 4
+            rotation: 180
         })
         //terug naar wit vierkant
         .to("#quintendt .box", {
             borderRadius:"0",
             backgroundColor: "white",
             rotation: -180,
-            duration:1
         });
     }
 }
