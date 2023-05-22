@@ -1,1 +1,41 @@
-/*# sourceMappingURL=quintendt.css.map */
+#quintendt {
+  text-align: center;
+}
+#quintendt .box {
+  z-index: 1;
+}
+#quintendt .part1 {
+  background-color: white;
+}
+#quintendt .part1 h1 {
+  font-size: 5rem;
+  color: brown;
+  font-family: "Times New Roman", Times, serif;
+}
+#quintendt .part1 .field {
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  background-image: url(../assets/AmF-field-background.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  z-index: -1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#quintendt .part1 .field p {
+  color: black;
+  font-weight: 700;
+  max-width: 40rem;
+  z-index: 1;
+}
+#quintendt .part2 {
+  height: 100vh;
+  background-color: white;
+}
+#quintendt .part2 h1 {
+  color: brown;
+}/*# sourceMappingURL=quintendt.css.map */
