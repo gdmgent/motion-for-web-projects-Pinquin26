@@ -1,9 +1,10 @@
 #quintendt {
    overflow-x: hidden;
+   overflow-y: hidden;
    h1 {
       font-size: 5rem;
       color: brown;
-      font-family: 'Times New Roman', Times, serif;
+      font-family:Sacramento;
    }
    p {
       color: black;
@@ -50,5 +51,46 @@
          margin-left: 57vw;
       }
    }
-   
+   .part3{
+      background-image: url(../assets/football-background.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100vh;
+      text-align: center;
+      h2{
+         text-shadow: rgb(218, 210, 180) 1px 0 10px;
+         padding-top: 60vh;
+         font-family:Arial, Helvetica, sans-serif;
+         font-size: 10rem;
+      }
+   }
+   .part4 {
+      height: 100vh;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background-color: white;
+      align-items: center;
+      .container1{
+         text-align: center;
+         justify-content: center;
+         display: flex;
+         h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            color: red;
+            font-size: 15rem;
+         }
+         
+         img {
+            height: 40vh;
+         }
+      }
+      .container2{
+         justify-content: center;
+         display: flex;
+         gap:30vw;
+         width:100%;
+      }
+   }
 }
