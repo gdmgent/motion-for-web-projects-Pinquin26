@@ -7,7 +7,7 @@ function quintendt (fase) {
         console.log("quintendt.js: init");
         section.tl
         
-        .add ("field")
+        .add ("football")
         .to("#quintendt .box", {
             borderRadius:"50%",
             backgroundColor: "rgb(112, 90, 61)",
@@ -16,26 +16,47 @@ function quintendt (fase) {
             rotation: 360,
             borderTop: "solid white 4px",
             center: 0
-        }, "field")
+        }, "football")
         
+        .add("toField")
         .to("#quintendt .box", {
             x:"45vw",
             y:"45vh"
-        },"field")
+        },"toField")
 
-        .add ("history")
+        .add ("catch")
         .to("#quintendt .box", {
-            x:"-30vw",
-            y:"40vw"
-        },"history")
+            x:"-50vw",
+            y:"40vw",
+            scale:.3
+        },"catch")
 
+        .add("run")
+        .to ("#quintendt .gif", {
+            x:1200,
+            ease:"none",
+            delay: 6
+        },"run")
+
+        .from ("#quintendt .history", {
+            x:-800,
+            ease:"ease-in",
+            delay:2
+        },"run")
+
+        .add("facts")
+        .from ("#quintendt .facts", {
+            x:800,
+            ease:"ease-in",
+            delay:2
+        },"facts")
+        
         //terug naar wit vierkant
         .to("#quintendt .box", {
             width:"20rem",
             height:"20rem",
             borderRadius:"0",
-            backgroundColor: "white",
-            rotation: -180
+            backgroundColor: "white"
         });
     }
 }

@@ -1,16 +1,24 @@
 #quintendt {
-  text-align: center;
+  overflow-x: hidden;
+}
+#quintendt h1 {
+  font-size: 5rem;
+  color: brown;
+  font-family: "Times New Roman", Times, serif;
+}
+#quintendt p {
+  color: black;
+  font-weight: 700;
+  max-width: 40rem;
+  z-index: 1;
+  margin: 1rem;
 }
 #quintendt .box {
   z-index: 1;
 }
 #quintendt .part1 {
   background-color: white;
-}
-#quintendt .part1 h1 {
-  font-size: 5rem;
-  color: brown;
-  font-family: "Times New Roman", Times, serif;
+  text-align: center;
 }
 #quintendt .part1 .field {
   width: 100%;
@@ -26,16 +34,19 @@
   align-items: center;
   justify-content: center;
 }
-#quintendt .part1 .field p {
-  color: black;
-  font-weight: 700;
-  max-width: 40rem;
-  z-index: 1;
-}
 #quintendt .part2 {
   height: 100vh;
   background-color: white;
+  text-align: center;
 }
-#quintendt .part2 h1 {
-  color: brown;
+#quintendt .part2 .gif {
+  height: 30vh;
+}
+#quintendt .part2 .history {
+  text-align: start;
+}
+#quintendt .part2 .facts {
+  text-align: end;
+  justify-content: end;
+  margin-left: 57vw;
 }/*# sourceMappingURL=quintendt.css.map */
