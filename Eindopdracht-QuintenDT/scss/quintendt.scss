@@ -16,6 +16,14 @@
    
    .box {
       z-index: 1;
+
+      .football-texture {
+         opacity: 0;
+         overflow: hidden;
+         border-radius: 50%;
+         width:10rem;
+         height:4.8rem;
+      }
    }
    .part1 {
       background-color: white;
@@ -93,4 +101,19 @@
          width:100%;
       }
    }
+   .part5{
+      
+      height: 150vh;
+      .horizon{
+         background-color: rgb(147, 187, 209);
+         height: 80vh;
+         opacity: 0.2;
+      }
+      .grass{
+         background-image: url(../assets/grass-texture.jpg);
+         height: 70vh;
+         opacity: 0.2;
+      }
+   }
+   
 }

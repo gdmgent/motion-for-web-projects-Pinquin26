@@ -17,6 +17,13 @@
 #quintendt .box {
   z-index: 1;
 }
+#quintendt .box .football-texture {
+  opacity: 0;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 10rem;
+  height: 4.8rem;
+}
 #quintendt .part1 {
   background-color: white;
   text-align: center;
@@ -91,4 +98,17 @@
   display: flex;
   gap: 30vw;
   width: 100%;
+}
+#quintendt .part5 {
+  height: 150vh;
+}
+#quintendt .part5 .horizon {
+  background-color: rgb(147, 187, 209);
+  height: 80vh;
+  opacity: 0.2;
+}
+#quintendt .part5 .grass {
+  background-image: url(../assets/grass-texture.jpg);
+  height: 70vh;
+  opacity: 0.2;
 }/*# sourceMappingURL=quintendt.css.map */
